@@ -1,97 +1,97 @@
-body{
-    background-color: #F2E9E1;
-    margin: 0;
-    height: 100%;
+* {
+    background-color: #e0def4;
 }
-
-p, li{
+p {
     color:#505460;
     font-size:14px;
     font-family: 'Bitter', serif;
 }
 
-h1{
+
+body {
+    background-color: #e0def4;
+    margin: 0;
+    height: 100%;
+}
+
+
+h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     color:#505460;
     margin-top: 26px;
 }
 
-header{
+header {
     display:flex;
     flex-direction: row-reverse;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: #C4A7E7;
+    background-color: #56949f;
 }
 
-footer{
+footer {
     position:fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
 }
 
-.indexnav{
+.indexnav {
     width: 175px;
     height: auto;
 }
-.topnav{
+.topnav {
     list-style:none;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-a{
-    color:#232136;
+a {
+    color: #56949f;
     text-decoration: none;
     font-size: 18px;
     padding: 16px 16px;
 }
 
-a:hover{
-    background-color:#232136;
-    color:#F2E9E1;
+a:hover {
+    background-color:#56949f;
+    color: #e0def4;
 }
 
-a:visited{
+a:visited {
     text-decoration: underline;
 }
 
-.new_note_button{
+.new_note_button {
     color: #505460;
+    background-color: #e0def4;
+    font-size: 40px;
     border: none;
-    background-color: #F2E9E1;
-    text-align: center;
-    font-size: 32px;
-    margin: 4px 2px;
-    padding: 8px;
-    border-radius: 50%;
 }
 
-.main_container{
+.main_container {
     margin: auto;
     width: 20%;
     padding-top: 50px;
-    padding-right: 40%;
 }
 
-.notes_button{
+.notes_button {
     color: #505460;
     border: none;
-    background-color: #F2E9E1;
+    background-color: #e0def4;
     font-size: 35px;
 }
 
-.note_area{
+.note_area {
     margin:auto;
     width: 100%;
     display: flex;
     align-items: center;
 }
 
-.note_button_div{
+.note_button_div {
     width: 25%;
     float: left;
 }
@@ -100,16 +100,16 @@ a:visited{
     margin-left: 10%;
 }
 
-textarea{
-    background-color: #F2E9E1;
+textarea {
+    background-color: #e0def4;
     border: none;
     outline: none;
-    color: #232136;
+    color: #575279;
     resize: none;
     width: 500px;
 }
 
-.side_nav{
+.side_nav {
     height: 100%;
     width: 240px;
     position: fixed;
@@ -118,10 +118,10 @@ textarea{
     top: 0;
     left: 0;
     margin-top: 50px;
-    background-color: #C4A7E7;
+    background-color: #56949f;
 }
-.side_nav li{
-    color:#232136;
+.side_nav li {
+    color:#56949f;
     font-size: 18px;
     padding: 5px;
     padding-left: 15%;
@@ -130,83 +130,94 @@ textarea{
     list-style: none;
 }
 
-.side_nav h1{
+.side_nav h1 {
     padding-left: 25%;
     font-size: 25px;
     font-weight: bold;
     color: #505460;
 }
 .side_nav .notes_button {
-    background-color: #C4A7E7;
+    background-color: #56949f;
     margin-left: 70%;
 }
 
-#buttons_for_notes {
-    float:right;
-}
-
 #save_button {
-    color: #232136;
+    color: #b4637a;
     border: none;
-    background-color: #C4A7E7;
+    background-color: #56949f;
 }
 
-#delete button {
-    color: #232136;
+#delete_button {
+    color: #b4637a;
     border: none;
-    background-color: #C4A7E7;
+    background-color: #56949f;
 }
 
 
 
-@media screen and (max-width:600px){
-    h1,p,a{
-        font-size: 12px;
-    }
-    .container-main{
-        display: flex;
-        justify-content: center;
-        padding-left: 150px;
-    }
-    .container-main h1{
-        margin: 30px 20px;
-        white-space: nowrap;
-    }
-    .index.nav{
-        width: 50%;
-    }
-    .note_button{
+@media screen and (max-width:600px) {
+    h1, p , a {
         font-size: 14px;
     }
-    .side_nav{
+
+    .main_container {
+        display: flex;
+        justify-content: center;
+        padding-left: 100px;
+    }
+
+    .main_container h1 {
+        margin: 20px 20px;
+    }
+
+    .indexnav {
+        width: 50%;
+    }
+
+    .buttons_for_notes {
+        font-size: 14px;
+    }
+
+    .side_nav {
         width: 20%;
-        margin-top: 45px;
+        margin-top: 50px;
     }
-    .side_nav li{
+
+    .side_nav li {
         padding-left: 5px;
-        font-size: 12px;
-        list-style: none;
+        font-size: 14px;
     }
-    .side_nav h1{
+
+    .side_nav h1 {
         padding-left: 10%;
         font-size: 14px;
     }
-    ul{
+
+    ul {
         padding-left: 0;
         width: 100px;
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
-    ::placeholder{
-        font-size: 12px;
-    }
-    .side_nav .open_nav{
-        font-size: 22px;
-        margin-left: 0px;
+
+    ::placeholder {
+        font-size: 14px;
     }
 
-    textarea{
+    .side_nav {
+        font-size: 16px;
+        margin-left: 0px;
+    }
+    
+    .notes_buttons {
+        font-size: 16px;
+        margin-left: 0px;
+    }
+    
+    textarea {
         width: 200px;
     }
+
+
 }
