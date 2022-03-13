@@ -12,21 +12,42 @@
 </head>
 <body>
     <header>
-        <nav class = "indexnav">
-            <ul class = "topnav">
-                <li><a href = "#">About</a></li>
-                <li><a href = "#">Docs</a></li>
+        <nav class="indexnav">
+            <ul class="topnav">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Docs</a></li>
             </ul>
         </nav>
     </header>
     <side>
-        <div class = "side_nav">
-            <button class = "note_button"> << </button>
-            <h1>My notes</h1>
+        <div class="side_nav">
+            <button class="notes_button"> << </button>
+            <h1>My Notes</h1>
             <ul>
                 <li>Note One</li>
                 <li>Note Two</li>
             </ul>
         </div>
     </side>
+    
+    <main>
+        <div class="main_container">
+            <div class="note_area">
+                <div class="note_button_div">
+                    <button class="new_note_button">+</button>
+                </div>
+                <div class="new_button_note">
+                    <textarea placeholder="Your Notes Here:" cols="50" rows="20"></textarea>
+                    <div id="note_buttons">
+                            <button id ="save_button">Save</button>
+                            <button id ="delete_button">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Created by Alexander Chea</p>
+    </footer>
 </body>
+</html>
